@@ -28,7 +28,7 @@ def allowed_file(filename):
 
 @app.route('/')
 def home():
-    return jsonify({"message": "Flask + Gemini API running"})
+    return jsonify({"message": "Flask + ATSGemini API running"})
 
 @app.route('/analyze-job', methods=['POST'])
 def analyze_job_resume():
