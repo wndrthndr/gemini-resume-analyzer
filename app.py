@@ -64,9 +64,10 @@ def analyze_job_resume():
         chat = model.start_chat(history=[])
 
         prompt_content = f"""
-        You are an expert resume analyzer for job applications.
-        Analyze the provided resume against the given job description.
-        Respond ONLY with a JSON object. DO NOT include any text or markdown formatting.
+        You are an advanced Applicant Tracking System (ATS) that evaluates resumes against job descriptions.
+
+Analyze the resume below in the exact way an ATS would, focusing on keyword matching, skill relevance, and role alignment. 
+Respond ONLY with a valid JSON object. DO NOT include any text or markdown formatting.
 
         ---
         Job Description:
